@@ -60,4 +60,5 @@ p {
     margin: 10px 0; /* Optional: space around the image */
     border-radius: 8px; /* Optional: rounded corners */
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+    text-align: center;
 }
