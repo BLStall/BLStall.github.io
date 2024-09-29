@@ -55,10 +55,10 @@ p {
 }
 
 .artifact-image {
-    width: 1200px; /* Set the width to a smaller size */
-    height: auto; /* Keep the aspect ratio by letting the height adjust automatically */
-    margin: 10px 0; /* Optional: space around the image */
-    border-radius: 8px; /* Optional: rounded corners */
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Optional: subtle shadow */
-    text-align: center;
+    width: 1200px;  /* Set the width to a smaller size */
+    height: auto;   /* Keep the aspect ratio by letting the height adjust automatically */
+    margin: 10px auto;  /* Centers the image with auto left and right margins */
+    border-radius: 8px;  /* Optional: rounded corners */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);  /* Optional: subtle shadow */
+    display: block; /* Make the image a block element to center it with margin: auto */
 }
