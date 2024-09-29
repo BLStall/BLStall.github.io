@@ -46,3 +46,8 @@ footer {
     background-color: #333;
     color: #fff;
 }
+
+p {
+    margin-bottom: 20px; /* Increases space between paragraphs */
+    line-height: 1.6; /* Adjusts line height for better readability */
+}
