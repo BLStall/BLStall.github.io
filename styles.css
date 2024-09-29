@@ -53,3 +53,11 @@ p {
     margin-bottom: 20px; /* Increases space between paragraphs */
     line-height: 1.6; /* Adjusts line height for better readability */
 }
+
+.artifact-image {
+    width: 300px; /* Set the width to a smaller size */
+    height: auto; /* Keep the aspect ratio by letting the height adjust automatically */
+    margin: 10px 0; /* Optional: space around the image */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}
