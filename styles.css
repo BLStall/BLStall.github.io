@@ -55,7 +55,7 @@ p {
 }
 
 .artifact-image {
-    width: 300px; /* Set the width to a smaller size */
+    width: 1200px; /* Set the width to a smaller size */
     height: auto; /* Keep the aspect ratio by letting the height adjust automatically */
     margin: 10px 0; /* Optional: space around the image */
     border-radius: 8px; /* Optional: rounded corners */
