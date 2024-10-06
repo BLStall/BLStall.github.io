@@ -32,7 +32,7 @@
             </nav>
         </div>
     </header>
-    
+
     <main>
         <!-- Professional Self-Assessment -->
         <section id="self-assessment" class="section">
@@ -136,5 +136,20 @@
             <p>&copy; 2024 Brandon Stallons. DO NOT STEAL!! ಠ_ಠ</p>
         </div>
     </footer>
+    
+    <!-- Scroll to Top Button -->
+<a href="#" id="scrollTop" title="Back to Top">&uarr;</a>
+
+<script>
+    // Show or hide the scroll to top button
+    window.addEventListener('scroll', function() {
+        const scrollTopButton = document.getElementById('scrollTop');
+        if (window.pageYOffset > 300) {
+            scrollTopButton.style.display = "block";
+        } else {
+            scrollTopButton.style.display = "none";
+        }
+    });
+</script>
 </body>
 </html>
