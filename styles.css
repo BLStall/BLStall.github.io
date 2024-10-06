@@ -245,12 +245,15 @@ footer a:hover {
     bottom: 40px;
     right: 40px;
     display: none;
+    width: 50px;             /* Set equal width */
+    height: 50px;            /* Set equal height */
     background: #e8491d;
     color: #ffffff;
-    padding: 10px 15px;
-    border-radius: 50%;
+    border-radius: 50%;      /* Makes the shape a circle */
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
+    text-align: center;      /* Center the text horizontally */
+    line-height: 50px;       /* Center the text vertically */
     z-index: 1000;
     transition: background 0.3s;
 }
@@ -258,6 +261,7 @@ footer a:hover {
 #scrollTop:hover {
     background: #cf3c13;
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
