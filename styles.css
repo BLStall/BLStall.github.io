@@ -15,7 +15,7 @@ body {
     overflow: hidden;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
 }
@@ -33,6 +33,11 @@ a:hover {
     color: #004080;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 /* Header Styles */
 header {
     background: #35424a;
@@ -45,12 +50,12 @@ header {
 header h1 {
     text-transform: uppercase;
     margin: 0;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 header h2 {
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: normal;
     color: #e8491d;
 }
@@ -62,20 +67,56 @@ nav {
 nav ul {
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav li {
-    display: inline;
-    margin-right: 15px;
+    position: relative;
+}
+
+nav > ul > li {
+    margin-right: 20px;
 }
 
 nav a {
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
+    padding: 5px 0;
 }
 
 nav a:hover {
+    color: #e8491d;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #35424a;
+    padding: 10px;
+    top: 30px;
+}
+
+nav li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin-bottom: 10px;
+}
+
+.submenu li:last-child {
+    margin-bottom: 0;
+}
+
+.submenu a {
+    color: #ffffff;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.submenu a:hover {
     color: #e8491d;
 }
 
@@ -99,11 +140,33 @@ nav a:hover {
     color: #e8491d;
 }
 
+.artifact h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #333;
+}
+
 .artifact-image {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
     border-radius: 5px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .btn {
@@ -118,6 +181,26 @@ nav a:hover {
 
 .btn:hover {
     background: #cf3c13;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e8491d;
+    color: #ffffff;
 }
 
 /* Footer Styles */
@@ -136,15 +219,22 @@ footer p {
 /* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {
-        text-align: center;
+        flex-direction: column;
     }
 
     nav li {
-        display: block;
-        margin: 10px 0;
+        margin-bottom: 10px;
+    }
+
+    nav > ul > li {
+        margin-right: 0;
     }
 
     header h1, header h2 {
         text-align: center;
+    }
+
+    .submenu {
+        position: static;
     }
 }
