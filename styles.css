@@ -12,16 +12,39 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-   /* overflow: hidden;*/
 }
 
-h1, h2, h3, h4 {
+h1 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
-p {
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #e8491d;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-top: 30px;
     margin-bottom: 15px;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 a {
@@ -141,6 +164,65 @@ nav .submenu a:hover {
     padding-bottom: 10px;
 }
 
+/* Self-Assessment Section */
+#self-assessment {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+#self-assessment h2 {
+    text-align: center;
+    border-bottom: none;
+}
+
+#self-assessment h3 {
+    color: #e8491d;
+    margin-top: 40px;
+}
+
+#self-assessment p {
+    color: #333;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles for the artifact list in the self-assessment section */
+.artifact-list {
+    list-style: none; /* Remove default bullets */
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.artifact-list li {
+    margin-bottom: 20px;
+    padding-left: 0;
+    position: relative;
+}
+
+.artifact-list li::before {
+    content: "\2022"; /* Unicode for bullet point */
+    color: #e8491d;   /* Use your accent color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.artifact-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.artifact-list a:hover {
+    text-decoration: underline;
+}
+
+.artifact-list strong {
+    font-weight: bold;
+}
+
+/* Artifact Styles */
 .artifact {
     margin-bottom: 60px;
 }
@@ -245,15 +327,15 @@ footer a:hover {
     bottom: 40px;
     right: 40px;
     display: none;
-    width: 50px;             /* Set equal width */
-    height: 50px;            /* Set equal height */
+    width: 50px;
+    height: 50px;
     background: #e8491d;
     color: #ffffff;
-    border-radius: 50%;      /* Makes the shape a circle */
+    border-radius: 50%;
     text-decoration: none;
     font-size: 24px;
-    text-align: center;      /* Center the text horizontally */
-    line-height: 50px;       /* Center the text vertically */
+    text-align: center;
+    line-height: 50px;
     z-index: 1000;
     transition: background 0.3s;
 }
@@ -261,7 +343,6 @@ footer a:hover {
 #scrollTop:hover {
     background: #cf3c13;
 }
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -289,5 +370,18 @@ footer a:hover {
     nav .submenu a {
         padding: 10px;
         text-align: center;
+    }
+
+    /* Ensure Self-Assessment Text is Readable on Mobile */
+    #self-assessment {
+        padding: 30px 15px;
+    }
+
+    #self-assessment h2, #self-assessment h3 {
+        text-align: center;
+    }
+
+    #self-assessment p {
+        padding: 0 15px;
     }
 }
