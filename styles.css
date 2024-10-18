@@ -1,181 +1,211 @@
 /* General Styles */
+
+/* Apply global font styles, line height, margin, padding, background color, text color, and smooth scrolling */
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+    background-color: #f4f4f4; /* Light gray background for the body */
+    color: #333; /* Dark gray text color for better readability */
+    scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
 }
 
+/* Container class to center content and set maximum width */
 .container {
     width: 90%;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 1200px; /* Limit the maximum width for better readability on large screens */
+    margin: auto; /* Center the container horizontally */
 }
 
+/* Heading styles for h1 to h4 */
 h1, h2, h3, h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Use a different font for headings */
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Consistent bottom margin for spacing */
 }
 
+/* Specific styles for h1 */
 h1 {
-    font-size: 36px;
+    font-size: 36px; /* Large font size for the main title */
 }
 
+/* Specific styles for h2 */
 h2 {
     font-size: 30px;
-    color: #e8491d;
-    border-bottom: 2px solid #e8491d;
+    color: #e8491d; /* Accent color for h2 headings */
+    border-bottom: 2px solid #e8491d; /* Underline to separate sections */
     padding-bottom: 10px;
 }
 
+/* Specific styles for h3 */
 h3 {
     font-size: 24px;
     margin-top: 30px;
 }
 
+/* Specific styles for h4 */
 h4 {
     font-size: 20px;
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
+/* Paragraph styling */
 p {
-    margin-bottom: 15px;
-    line-height: 1.6;
+    margin-bottom: 15px; /* Consistent spacing between paragraphs */
+    line-height: 1.6; /* Improve readability */
 }
 
+/* Link styling */
 a {
-    color: #007bff;
-    text-decoration: none;
+    color: #007bff; /* Standard link color */
+    text-decoration: none; /* Remove underline for cleaner look */
 }
 
 a:hover {
-    color: #0056b3;
+    color: #0056b3; /* Darken link color on hover */
 }
 
+/* Remove bullet points and padding from unordered lists */
 ul {
     list-style: none;
     padding: 0;
 }
 
 /* Header Styles */
+
+/* Style the header with a gradient background and box shadow */
 header {
     background: radial-gradient(circle, rgba(0,64,108,1) 0%, rgba(0,35,58,1) 53%, rgba(0,33,55,1) 75%);
     color: #ffffff;
     padding: 20px 0;
     min-height: 70px;
-    border-bottom: #e8491d 3px solid;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-bottom: #e8491d 3px solid; /* Add a bottom border for separation */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Add shadow for depth */
 }
 
+/* Style for the main heading in the header */
 header h1 {
     color: #ffffff;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Capitalize letters for emphasis */
     margin: 0;
     font-size: 36px;
-    text-align: center; /* Centered the h1 heading */
+    text-align: center; /* Center the main heading */
 }
 
+/* Style for the subheading in the header */
 header h2 {
     margin-top: 5px;
     font-size: 24px;
-    font-weight: normal;
-    color: #e8491d;
-    text-align: center; /* Centered the h2 heading */
+    font-weight: normal; /* Normal weight for contrast with h1 */
+    color: #e8491d; /* Use accent color */
+    text-align: center; /* Center the subheading */
 }
 
+/* Navigation Styles */
 nav {
     margin-top: 10px;
 }
 
+/* Style the navigation menu */
 nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center the navigation items */
 }
 
+/* Style for each navigation item */
 nav li {
-    position: relative;
-    margin: 0 15px;
+    position: relative; /* For positioning submenus */
+    margin: 0 15px; /* Space between menu items */
 }
 
+/* Style for navigation links */
 nav a {
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
     padding: 5px 10px;
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s; /* Smooth transitions */
 }
 
+/* Hover effect for navigation links */
 nav a:hover {
-    color: #e8491d;
-    background: rgba(255,255,255,0.1);
+    color: #e8491d; /* Change text color on hover */
+    background: rgba(255,255,255,0.1); /* Add background highlight */
     border-radius: 5px;
 }
 
 /* Submenu Styles */
+
+/* Show submenu on hover of parent item */
 nav li.has-submenu:hover > .submenu {
     display: block;
 }
 
+/* Style the submenu */
 nav .submenu {
-    display: none;
+    display: none; /* Hide submenu by default */
     position: absolute;
-    background-color: #2c3e50;
+    background-color: #2c3e50; /* Dark background for submenu */
     padding: 10px 0;
-    top: 100%;
+    top: 100%; /* Position below the parent menu item */
     left: 0;
     min-width: 150px;
-    border-radius: 0 0 5px 5px;
-    z-index: 1000;
+    border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+    z-index: 1000; /* Ensure submenu appears above other elements */
 }
 
+/* Remove margin from submenu items */
 nav .submenu li {
     margin: 0;
 }
 
+/* Style for submenu links */
 nav .submenu a {
     color: #ffffff;
-    text-transform: none;
+    text-transform: none; /* Keep text case as is */
     font-weight: normal;
     padding: 10px 20px;
     display: block;
 }
 
+/* Hover effect for submenu links */
 nav .submenu a:hover {
     background: #34495e;
     color: #e8491d;
 }
 
 /* Section Styles */
+
+/* General styling for sections */
 .section {
-    padding: 60px 0;
+    padding: 60px 0; /* Vertical padding */
     background-color: #ffffff;
     margin-bottom: 10px;
 }
 
+/* Underline h2 headings in sections */
 .section h2 {
     border-bottom: 2px solid #e8491d;
     padding-bottom: 10px;
 }
 
 /* Artifact Section Styles */
+
+/* Styling for artifact sections */
 .artifact-section {
     position: relative;
     width: 100%;
     margin-bottom: 10px;
-    /* Scroll Snap */
-    scroll-snap-align: start;
+    scroll-snap-align: start; /* Enable scroll snapping for better navigation */
 }
 
-/* Optional: Background colors for artifacts */
+/* Optional background colors to differentiate artifacts */
 #artifact1 {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light gray background */
 }
 
 #artifact2 {
@@ -187,32 +217,39 @@ nav .submenu a:hover {
 }
 
 /* Artifact and Self-Assessment Styles */
+
+/* Margin for artifacts and self-assessment sections */
 .artifact, .self-assessment-article {
     margin-bottom: 60px;
 }
 
+/* Styling for h3 headings within artifacts */
 .artifact h3, .self-assessment-article h3 {
     color: #333;
 }
 
+/* Styling for h4 headings within artifacts */
 .artifact h4, .self-assessment-article h4 {
     margin-top: 30px;
     font-size: 22px;
     color: #333;
 }
 
+/* Style for images in artifacts */
 .artifact-image {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
 /* Video Container */
+
+/* Responsive container for embedded videos */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; /* Maintain aspect ratio (16:9) */
     height: 0;
     margin-bottom: 30px;
 }
@@ -221,135 +258,158 @@ nav .submenu a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
 }
 
 /* Buttons */
+
+/* General button styling */
 .btn {
     display: inline-block;
-    background: #e8491d;
+    background: #e8491d; /* Button color matching accent color */
     color: #ffffff;
     padding: 12px 24px;
     text-transform: uppercase;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s; /* Smooth transition on hover */
     text-decoration: none;
     margin-top: 10px;
 }
 
+/* Hover effect for buttons */
 .btn:hover {
-    background: #cf3c13;
+    background: #cf3c13; /* Slightly darker on hover */
 }
 
 /* Tables */
+
+/* Table styling */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Remove gaps between cells */
     margin-bottom: 20px;
 }
 
+/* Border styling for tables */
 table, th, td {
     border: 1px solid #dddddd;
 }
 
+/* Padding and alignment for table cells */
 th, td {
     padding: 12px;
     text-align: left;
 }
 
+/* Styling for table headers */
 th {
-    background-color: #e8491d;
+    background-color: #e8491d; /* Use accent color */
     color: #ffffff;
 }
 
 /* Footer Styles */
+
+/* Styling for the footer */
 footer {
-    background: #1f2a30;
+    background: #1f2a30; /* Dark background */
     color: #ffffff;
     text-align: center;
     padding: 30px 0;
     margin-top: 20px;
 }
 
+/* Remove margin from footer paragraphs */
 footer p {
     margin: 0;
 }
 
+/* Link styling within the footer */
 footer a {
-    color: #e8491d;
+    color: #e8491d; /* Accent color for links */
     text-decoration: none;
 }
 
+/* Hover effect for footer links */
 footer a:hover {
     text-decoration: underline;
 }
 
 /* Scroll to Top Button */
+
+/* Styling for the scroll to top button */
 #scrollTop {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    display: none;
+    display: none; /* Hidden by default; shown when scrolling */
     width: 50px;
     height: 50px;
     background: #e8491d;
     color: #ffffff;
-    border-radius: 50%;
+    border-radius: 50%; /* Make the button round */
     text-decoration: none;
     font-size: 24px;
     text-align: center;
-    line-height: 50px;
-    z-index: 1000;
-    transition: background 0.3s;
+    line-height: 50px; /* Vertically center the arrow */
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: background 0.3s; /* Smooth transition on hover */
 }
 
+/* Hover effect for the scroll to top button */
 #scrollTop:hover {
-    background: #cf3c13;
+    background: #cf3c13; /* Darker background on hover */
 }
 
 /* Scroll Snap */
+
+/* Enable vertical scroll snapping in the main content area */
 main {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y proximity; /* Snap to nearest element when scrolling */
 }
 
 /* Responsive Styles */
+
+/* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
+    /* Center header headings on mobile */
     header h1, header h2 {
         text-align: center;
     }
 
+    /* Stack navigation items vertically */
     nav ul {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Adjust margin for nav items */
     nav li {
         margin: 10px 0;
     }
 
+    /* Adjust submenu for mobile */
     nav .submenu {
-        position: static;
+        position: static; /* Position relative to parent */
         background-color: #2c3e50;
         border-radius: 0;
         padding: 0;
         width: 100%;
     }
 
+    /* Center submenu links and adjust padding */
     nav .submenu a {
         padding: 10px;
         text-align: center;
     }
 
-    /* Adjust padding for sections on mobile */
+    /* Reduce padding for sections on mobile for better fit */
     .section {
         padding: 30px 15px;
     }
 
-    /* Ensure artifact sections are responsive */
+    /* Adjust container width within artifact sections for mobile */
     .artifact-section .container {
         width: 95%;
     }
 }
-
-/* Removed specific styles targeting #self-assessment to ensure consistency */
