@@ -4,8 +4,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f9f9f9; /* Changed to a very light gray for a cleaner look */
+    color: #2c3e50; /* Darker shade for better readability */
 }
 
 .container {
@@ -16,44 +16,46 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
-    color: #333;
+    color: #2c3e50;
     margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 42px; /* Slightly increased for prominence */
 }
 
 h2 {
-    font-size: 30px;
-    color: #e8491d;
-    border-bottom: 2px solid #e8491d;
+    font-size: 36px;
+    color: #e67e22; /* Changed to a warmer accent color */
+    border-bottom: 2px solid #e67e22;
     padding-bottom: 10px;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 28px;
     margin-top: 30px;
+    color: #e67e22; /* Consistent accent color */
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
 p {
     margin-bottom: 15px;
-    line-height: 1.6;
+    line-height: 1.8; /* Increased for better readability */
+    color: #34495e;
 }
 
 a {
-    color: #007bff;
+    color: #2980b9; /* Changed to a blue that stands out */
     text-decoration: none;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #1c5985; /* Darker shade on hover */
 }
 
 ul {
@@ -63,30 +65,29 @@ ul {
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #35424a 0%, #1f2a30 100%);
+    background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
     color: #ffffff;
-    padding: 20px 0;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+    padding: 40px 0;
+    border-bottom: #e67e22 4px solid;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 header h1 {
-    color: #ffffff; /* Set the color to white */
+    color: #ffffff;
     text-transform: uppercase;
     margin: 0;
-    font-size: 36px;
+    font-size: 48px; /* Increased for impact */
 }
 
 header h2 {
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 24px;
     font-weight: normal;
-    color: #e8491d;
+    color: #ecf0f1; /* Lighter shade for subtitle */
 }
 
 nav {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 nav ul {
@@ -98,21 +99,20 @@ nav ul {
 
 nav li {
     position: relative;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav a {
     color: #ffffff;
     font-weight: bold;
-    text-transform: uppercase;
-    padding: 5px 10px;
+    padding: 10px 15px;
     transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
 }
 
 nav a:hover {
-    color: #e8491d;
-    background: rgba(255,255,255,0.1);
-    border-radius: 5px;
+    background: #e67e22; /* Accent color on hover */
+    color: #ffffff;
 }
 
 /* Submenu Styles */
@@ -127,7 +127,7 @@ nav .submenu {
     padding: 10px 0;
     top: 100%;
     left: 0;
-    min-width: 150px;
+    min-width: 160px;
     border-radius: 0 0 5px 5px;
     z-index: 1000;
 }
@@ -138,7 +138,6 @@ nav .submenu li {
 
 nav .submenu a {
     color: #ffffff;
-    text-transform: none;
     font-weight: normal;
     padding: 10px 20px;
     display: block;
@@ -146,19 +145,32 @@ nav .submenu a {
 
 nav .submenu a:hover {
     background: #34495e;
-    color: #e8491d;
+    color: #e67e22;
 }
 
 /* Section Styles */
 .section {
-    padding: 60px 0;
+    padding: 80px 0; /* Increased padding for better separation */
     background-color: #ffffff;
-    margin-bottom: 10px;
+}
+
+.section:nth-of-type(even) {
+    background-color: #f2f2f2; /* Light gray for alternating sections */
 }
 
 .section h2 {
-    border-bottom: 2px solid #e8491d;
+    border-bottom: 2px solid #e67e22;
     padding-bottom: 10px;
+    text-align: center; /* Centered headings for emphasis */
+}
+
+.section h3 {
+    color: #e67e22;
+}
+
+.section p {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto 20px;
 }
 
 /* Artifact and Self-Assessment Styles */
@@ -167,54 +179,40 @@ nav .submenu a:hover {
 }
 
 .artifact h3, .self-assessment-article h3 {
-    color: #333;
+    color: #e67e22;
 }
 
 .artifact h4, .self-assessment-article h4 {
     margin-top: 30px;
     font-size: 22px;
-    color: #333;
+    color: #2c3e50;
 }
 
 .artifact-image {
     width: 100%;
+    max-width: 800px;
     height: auto;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Video Container */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    margin-bottom: 30px;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 /* Buttons */
 .btn {
     display: inline-block;
-    background: #e8491d;
+    background: #e67e22;
     color: #ffffff;
-    padding: 12px 24px;
+    padding: 14px 28px;
     text-transform: uppercase;
     border-radius: 5px;
     transition: background 0.3s;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 .btn:hover {
-    background: #cf3c13;
+    background: #cf6116;
 }
 
 /* Tables */
@@ -234,16 +232,16 @@ th, td {
 }
 
 th {
-    background-color: #e8491d;
+    background-color: #e67e22;
     color: #ffffff;
 }
 
 /* Footer Styles */
 footer {
-    background: #1f2a30;
+    background: #2c3e50;
     color: #ffffff;
     text-align: center;
-    padding: 30px 0;
+    padding: 40px 0;
     margin-top: 20px;
 }
 
@@ -252,7 +250,7 @@ footer p {
 }
 
 footer a {
-    color: #e8491d;
+    color: #e67e22;
     text-decoration: none;
 }
 
@@ -263,12 +261,12 @@ footer a:hover {
 /* Scroll to Top Button */
 #scrollTop {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 30px;
+    right: 30px;
     display: none;
     width: 50px;
     height: 50px;
-    background: #e8491d;
+    background: #e67e22;
     color: #ffffff;
     border-radius: 50%;
     text-decoration: none;
@@ -276,11 +274,13 @@ footer a:hover {
     text-align: center;
     line-height: 50px;
     z-index: 1000;
-    transition: background 0.3s;
+    transition: background 0.3s, opacity 0.3s;
+    opacity: 0.8;
 }
 
 #scrollTop:hover {
-    background: #cf3c13;
+    background: #cf6116;
+    opacity: 1;
 }
 
 /* Responsive Styles */
@@ -313,8 +313,10 @@ footer a:hover {
 
     /* Adjust padding for sections on mobile */
     .section {
-        padding: 30px 15px;
+        padding: 40px 15px;
+    }
+
+    .artifact-image {
+        margin: 20px auto;
     }
 }
-
-/* Removed specific styles targeting #self-assessment to ensure consistency */
