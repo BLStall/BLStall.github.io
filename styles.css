@@ -14,36 +14,36 @@ body {
     margin: auto;
 }
 
-h1 {
+h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
+    color: #333;
     margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     color: #e8491d;
-    margin-bottom: 20px;
+    border-bottom: 2px solid #e8491d;
+    padding-bottom: 10px;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    color: #333;
     margin-top: 30px;
-    margin-bottom: 15px;
 }
 
 h4 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     line-height: 1.6;
 }
 
@@ -155,83 +155,21 @@ nav .submenu a:hover {
     margin-bottom: 10px;
 }
 
-.section:nth-of-type(even) {
-    background-color: #f9f9f9;
-}
-
 .section h2 {
     border-bottom: 2px solid #e8491d;
     padding-bottom: 10px;
 }
 
-/* Self-Assessment Section */
-#self-assessment {
-    background-color: #ffffff;
-    padding: 60px 0;
-}
-
-#self-assessment h2 {
-    text-align: center;
-    border-bottom: none;
-}
-
-#self-assessment h3 {
-    color: #e8491d;
-    margin-top: 40px;
-}
-
-#self-assessment p {
-    color: #333;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Styles for the artifact list in the self-assessment section */
-.artifact-list {
-    list-style: none; /* Remove default bullets */
-    margin-top: 20px;
-    padding-left: 0;
-}
-
-.artifact-list li {
-    margin-bottom: 20px;
-    padding-left: 0;
-    position: relative;
-}
-
-.artifact-list li::before {
-    content: "\2022"; /* Unicode for bullet point */
-    color: #e8491d;   /* Use your accent color */
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-
-.artifact-list a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.artifact-list a:hover {
-    text-decoration: underline;
-}
-
-.artifact-list strong {
-    font-weight: bold;
-}
-
-/* Artifact Styles */
-.artifact {
+/* Artifact and Self-Assessment Styles */
+.artifact, .self-assessment-article {
     margin-bottom: 60px;
 }
 
-.artifact h3 {
-    color: #e8491d;
+.artifact h3, .self-assessment-article h3 {
+    color: #333;
 }
 
-.artifact h4 {
+.artifact h4, .self-assessment-article h4 {
     margin-top: 30px;
     font-size: 22px;
     color: #333;
@@ -372,16 +310,10 @@ footer a:hover {
         text-align: center;
     }
 
-    /* Ensure Self-Assessment Text is Readable on Mobile */
-    #self-assessment {
+    /* Adjust padding for sections on mobile */
+    .section {
         padding: 30px 15px;
     }
-
-    #self-assessment h2, #self-assessment h3 {
-        text-align: center;
-    }
-
-    #self-assessment p {
-        padding: 0 15px;
-    }
 }
+
+/* Removed specific styles targeting #self-assessment to ensure consistency */
