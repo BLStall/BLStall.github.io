@@ -162,9 +162,9 @@ nav .submenu a:hover {
 }
 
 /* Ensure non-artifact sections take up full viewport height */
-.section:not(.artifact-section) {
+/*.section:not(.artifact-section) {
     min-height: 100vh;
-}
+}*/
 
 /* Artifact Section Styles */
 .artifact-section {
