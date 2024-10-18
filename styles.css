@@ -72,7 +72,7 @@ header {
 }
 
 header h1 {
-    color: #ffffff; /* Set the color to white */
+    color: #ffffff;
     text-transform: uppercase;
     margin: 0;
     font-size: 36px;
@@ -159,6 +159,47 @@ nav .submenu a:hover {
 .section h2 {
     border-bottom: 2px solid #e8491d;
     padding-bottom: 10px;
+}
+
+/* Ensure non-artifact sections take up full viewport height */
+.section:not(.artifact-section) {
+    min-height: 100vh;
+}
+
+/* Artifact Section Styles */
+.artifact-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.artifact-section.active {
+    opacity: 1;
+}
+
+.artifact-section .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Optional: Background colors for artifacts */
+#artifact1 {
+    background-color: #f9f9f9;
+}
+
+#artifact2 {
+    background-color: #e9e9e9;
+}
+
+#artifact3 {
+    background-color: #d9d9d9;
 }
 
 /* Artifact and Self-Assessment Styles */
@@ -314,6 +355,11 @@ footer a:hover {
     /* Adjust padding for sections on mobile */
     .section {
         padding: 30px 15px;
+    }
+
+    /* Ensure artifact sections are responsive */
+    .artifact-section .container {
+        width: 95%;
     }
 }
 
