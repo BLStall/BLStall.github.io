@@ -203,7 +203,7 @@ nav .submenu a:hover {
     scroll-snap-align: start; /* Enable scroll snapping for better navigation */
 }
 
-/* Optional background colors to differentiate artifacts */
+/* background colors to differentiate artifacts (opted out because I could not find a good color to compliment existing colors) */
 #artifact1 {
     background-color: #edede9; /* Light gray background */
 }
@@ -243,8 +243,6 @@ nav .submenu a:hover {
     border-radius: 5px; /* Slightly rounded corners */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
-
-/* Video Container */
 
 /* Responsive container for embedded videos */
 .video-container {
