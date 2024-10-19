@@ -205,15 +205,15 @@ nav .submenu a:hover {
 
 /* Optional background colors to differentiate artifacts */
 #artifact1 {
-    background-color: #f9f9f9; /* Light gray background */
+    background-color: #dcdcd6; /* Light gray background */
 }
 
 #artifact2 {
-    background-color: #e9e9e9;
+    background-color: #cbcbc2;
 }
 
 #artifact3 {
-    background-color: #d9d9d9;
+    background-color: #babaae;
 }
 
 /* Artifact and Self-Assessment Styles */
